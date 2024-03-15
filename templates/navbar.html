@@ -1,0 +1,66 @@
+{% load static %}
+
+		<!-- Preloader -->
+        <div class="preloader">
+            <div class="loader">
+                <div class="loader-outter"></div>
+                <div class="loader-inner"></div>
+
+                <div class="indicator"> 
+                    <svg width="16px" height="12px">
+                        <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                        <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!-- End Preloader -->
+		
+
+
+<!-- Header Area -->
+<header class="header">
+    <!-- Header Inner -->
+    <div class="header-inner">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Logo and Mobile Nav -->
+                <div class="col-lg-3 col-md-3 col-12">
+                    <div class="logo">
+                        <a href="{% url 'home' %}">
+                            <img src="{% static 'img/logo.png' %}" alt="Your Logo">
+                        </a>
+                    </div>
+                    <div class="mobile-nav"></div>
+                </div>
+
+                <!-- Login/Register Buttons -->
+                <div class="col-lg-6 col-md-6 col-12 text-right">
+                    <div class="get-quote">
+                        {% if user.is_authenticated %}
+                            <a href="{% url 'logout' %}" class="btn">Logout</a>
+                        {% else %}
+                            <a href="{% url 'login' %}" class="btn">Login</a>
+                            <a href="{% url 'register' %}" class="btn">Register</a>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <!-- Main Menu -->
+                <div class="col-lg-3 col-md-3 col-12 text-right">
+                    <div class="main-menu">
+                        <nav class="navigation">
+                            <ul class="nav menu">
+                                <li><a href="{% url 'home' %}">Home</a></li>
+                                <li><a href="{% url 'doctors' %}">Doctors</a></li>
+                                <!-- Add more menu items as needed -->
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ End Header Inner -->
+</header>
+<!-- End Header Area -->

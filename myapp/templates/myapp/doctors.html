@@ -1,0 +1,218 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    <section class="features">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12">
+                  <div class="feature-block d-lg-flex">
+                      {% for i in docs %}
+                          <div class="feature-item mb-5 mb-lg-0">
+                              <div class="feature-icon mb-4">
+                                  <i class="icofont-surgeon-alt"></i>
+                              </div>
+                              <span>{{i.name}}<br>{{i.surname}}</span>
+                              <h4 class="mb-3">{{i.job}}</h4>
+                              <p class="mb-4">Work time {{i.job_start}} to {{i.job_end}}
+                              </p>
+                              <a href="{% url 'booking' i.id %}" class="btn btn-main btn-round-full" style="color: white;">Book now</a>
+                          </div>
+                      {% endfor %}
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  </br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+{% endblock content %}
+
+    
+{% comment %} 
+          <head>
+            <title>exported project</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <meta charset="utf-8" />
+            <meta property="twitter:card" content="summary_large_image" />
+        
+            <style data-tag="reset-style-sheet">
+              html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+            </style>
+            <style data-tag="default-style-sheet">
+              html {
+                font-family: Inter;
+                font-size: 16px;
+              }
+        
+              body {
+                font-weight: 400;
+                font-style:normal;
+                text-decoration: none;
+                text-transform: none;
+                letter-spacing: normal;
+                line-height: 1.15;
+                color: var(--dl-color-gray-black);
+                background-color: var(--dl-color-gray-white);
+        
+              }
+            </style>
+            <link
+              rel="stylesheet"
+              href="https://unpkg.com/animate.css@4.1.1/animate.css"
+            />
+            <link
+              rel="stylesheet"
+              href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+              data-tag="font"
+            />
+            <link
+              rel="stylesheet"
+              href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+              data-tag="font"
+            />
+            <link
+              rel="stylesheet"
+              href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+              data-tag="font"
+            />
+            <link
+              rel="stylesheet"
+              href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+            />
+          </head>
+          <body>
+            <link rel="stylesheet" href="./style.css" />
+            <div>
+              <link href="./index.css" rel="stylesheet" />
+        
+              <div class="divrjkl3tj-container">
+                <div class="divrjkl3tj-divrjkl3tj">
+                  <div class="divrjkl3tj-divr147o4aa">
+                    <div class="divrjkl3tj-section">
+                      <div class="divrjkl3tj-diva1p2ofyy">
+                        <div class="divrjkl3tj-link">
+                          <img
+                            src="public/external/avatarplaceholdera467efeasvgfill1604-xouo.svg"
+                            alt="avatarPlaceholdera467efeasvgfill1604"
+                            class="divrjkl3tj-avatar-placeholdera467efeasvgfill"
+                          />
+                          <div
+                            class="divrjkl3tj-picture770620201023150302162x162jpg"
+                          ></div>
+                        </div>
+                        <button class="divrjkl3tj-button">
+                          <img
+                            src="public/external/svg1628-a86s.svg"
+                            alt="SVG1628"
+                            class="divrjkl3tj-svg"
+                          />
+                        </button>
+                      </div>
+                      <div class="divrjkl3tj-divb79tjd2"></div>
+                    </div>
+                    <div class="divrjkl3tj-section1">
+                      <div class="divrjkl3tj-divd1rc2g38">
+                        <div class="divrjkl3tj-divd17spy2k">
+                          <span class="divrjkl3tj-text">
+                            <span>Акушер · Гинеколог · Гинеколог-эндокринолог</span>
+                          </span>
+                          <span class="divrjkl3tj-text02">
+                            <span>Третинник Людмила Владимировна</span>
+                          </span>
+                          <span class="divrjkl3tj-text04">
+                            <span>Стаж 49 лет · Врач высшей категории</span>
+                          </span>
+                        </div>
+                        <div class="divrjkl3tj-divrdm680z">
+                          <div class="divrjkl3tj-div">
+                            <div class="divrjkl3tj-divr1fypdds">
+                              <div class="divrjkl3tj-divsurhjj8">
+                                <button class="divrjkl3tj-button01">
+                                  <span class="divrjkl3tj-text06">
+                                    <span>15:45</span>
+                                  </span>
+                                </button>
+                                <button class="divrjkl3tj-button02">
+                                  <span class="divrjkl3tj-text08">
+                                    <span>16:00</span>
+                                  </span>
+                                </button>
+                                <button class="divrjkl3tj-button03">
+                                  <span class="divrjkl3tj-text10">
+                                    <span>16:15</span>
+                                  </span>
+                                </button>
+                                <button class="divrjkl3tj-button04">
+                                  <span class="divrjkl3tj-text12">
+                                    <span>16:45</span>
+                                  </span>
+                                </button>
+                                <button class="divrjkl3tj-button05">
+                                  <span class="divrjkl3tj-text14">
+                                    <span>17:15</span>
+                                  </span>
+                                </button>
+                                <button class="divrjkl3tj-button06">
+                                  <span class="divrjkl3tj-text16">
+                                    <span>17:30</span>
+                                  </span>
+                                </button>
+                                <button class="divrjkl3tj-button07">
+                                  <span class="divrjkl3tj-text18">
+                                    <span>17:45</span>
+                                  </span>
+                                </button>
+                                <button class="divrjkl3tj-button08">
+                                  <span class="divrjkl3tj-text20">
+                                    <span>18:00</span>
+                                  </span>
+                                </button>
+                                <button class="divrjkl3tj-button09">
+                                  <span class="divrjkl3tj-text22">
+                                    <span>18:15</span>
+                                  </span>
+                                </button>
+                                <button class="divrjkl3tj-button10">
+                                  <img
+                                    src="public/external/expanderarrow1735de1asvg1720-1z7.svg"
+                                    alt="expanderArrow1735de1asvg1720"
+                                    class="divrjkl3tj-expander-arrow1735de1asvg"
+                                  />
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="divrjkl3tj-text24">2</span>
+                  <span class="divrjkl3tj-text25">3</span>
+                  <span class="divrjkl3tj-text26">4</span>
+                  <span class="divrjkl3tj-text27">5</span>
+                  <span class="divrjkl3tj-text28">6</span>
+                  <span class="divrjkl3tj-text29">7</span>
+                  <span class="divrjkl3tj-text30"><span>...</span></span>
+                  <span class="divrjkl3tj-text32"><span>9473</span></span>
+                </div>
+              </div>
+            </div>
+
+         {% endcomment %}
